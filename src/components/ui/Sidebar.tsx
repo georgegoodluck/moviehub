@@ -1,11 +1,11 @@
-import { NavLink } from 'react-router-dom';
-import { Home, TrendingUp, Star, Calendar, Film } from 'lucide-react';
+import { NavLink } from "react-router-dom";
+import { Home, TrendingUp, Star, Calendar, Film } from "lucide-react";
 
 const navItems = [
-  { to: '/', label: 'Home', icon: Home, end: true },
-  { to: '/popular', label: 'Popular', icon: TrendingUp },
-  { to: '/top-rated', label: 'Top Rated', icon: Star },
-  { to: '/upcoming', label: 'Upcoming', icon: Calendar },
+  { to: "/", label: "Home", icon: Home, end: true },
+  { to: "/popular", label: "Popular", icon: TrendingUp },
+  { to: "/top-rated", label: "Top Rated", icon: Star },
+  { to: "/upcoming", label: "Upcoming", icon: Calendar },
 ];
 
 export default function Sidebar() {
@@ -25,7 +25,9 @@ export default function Sidebar() {
             end={end}
             className={({ isActive }) =>
               `flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
-                isActive ? 'bg-blue-600 text-white' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-900'
+                isActive
+                  ? "bg-blue-600 text-white"
+                  : "text-slate-500 hover:bg-slate-100 hover:text-slate-900"
               }`
             }
           >
